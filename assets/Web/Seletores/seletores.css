@@ -1,0 +1,59 @@
+body { 
+	font-family: "Courier New", Courier, monospace; 
+	font-size: 300%; 
+	background-color: #000; 
+	color: #0f3; 
+	}
+/*	
+h1 { 
+	display:none; impedia que o h1 fosse exibido.
+	}*/
+	
+a, a:link, a:visited, a:hover, a:active 
+	{
+	text-decoration: none; 
+	color: #0f3; 
+	}
+	
+/*TP*/
+/*h1*/
+#div1 #div2 {
+	text-align:center;
+	margin:0 auto;
+} 
+
+#div2 > h1{
+	word-spacing:-4px;
+	color:#DF0;
+}
+
+
+/*101 710 810*/
+em, #i710{
+	color:#E00;
+}
+
+/*010*/
+p span{
+	font-family:Consolas;
+	font-weight:bold;
+}
+
+p >.c010{
+	color:#DF0;
+}
+	
+h1+p{
+	background-color:#003;
+}
+
+/*210 310*/
+a[title$="0"]{
+	color:#70F;
+}
+
+/*909*/
+.c909:after{
+	content:"   910";
+	color:#050;
+}
