@@ -1,0 +1,173 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #555;
+	background-image:url("HarryPotterlogo.png");
+	background-size:25%;
+	background-position:right;
+	background-repeat: no-repeat;
+	
+}
+
+h1 {text-align: center;}
+
+.item{display:inline; margin-right:10px;float:center}
+
+li {float:left;}
+a {
+    background-color: rgba(255,255,255,0.2);
+    border: none;
+    color: gray;
+    padding: 56px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 26px;
+    margin: 4px 2px;
+    transition-duration: 0.8s;
+    cursor: pointer;
+	float:left;
+	display: block;
+    color: white;
+	background-position: center;
+	background-size: 95%;
+}
+/*LEMBRETE: REDUZIR O TAMANHO DAS IMAGENS QUE FARÃO PARTE DOS ÍCONES DO MENU*/
+.active1 {
+    background-color: #555;
+    color: gold;
+    border: 2px solid gold;
+}
+
+.active1:hover {
+	background-image:url("hogwarts.png");
+	background-size: 120%;
+	transition-duration: 1.5s;
+    background-color: black;
+    color: white;
+}
+
+.active2 {
+	background-image:url("gryffindor.png");
+    background-color: #555;
+    color: black;
+    border: 2px solid red;
+}
+
+.active2:hover {
+	background-image:url("gryffindor.png");
+    background-color: red;
+    color: white;
+}
+
+.active3 {
+	background-image:url("Slytherin-crest.png");
+	background-color: #555;
+    color: black;
+    border: 2px solid green;
+}
+
+.active3:hover {
+	background-image:url("Slytherin-crest.png");
+    background-color: green;
+    color: white;
+	
+}
+
+.active4 {
+	background-image:url("ravenclaw.png");
+    background-color: #555;
+    color: black;
+    border: 2px solid blue;
+}
+
+.active4:hover {
+	background-image:url("ravenclaw.png");
+	background-color: blue;
+	color: white;
+	}
+
+.active5 {
+	background-image:url("hufflepuff.png");
+    background-color: #555;
+    color: black;
+    border: 2px solid yellow;
+}
+
+.active5:hover {
+	background-image:url("hufflepuff.png");
+    background-color: yellow;
+    color: white;
+}
+.um{	
+	background-image:url("Hogwarts+Castle+lights-WWoHP+at+USH.jpg");	
+	position:absolute;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: 150%;
+	font-family: Papyrus;
+	text-align:justify;
+	color: gold;
+}
+	
+.dois{	
+	background-image:url("backgroundgryffindor.jpg");	
+	position:relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: 135%;
+	font-family: Papyrus;
+	text-align:justify;
+	
+}
+	
+.tres{	
+	background-image:url("backgroundsyltherin.jpg");	
+	position:relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: 135%;
+	font-family: Papyrus;
+	text-align:justify;
+	
+}	
+
+.quatro{	
+	background-image:url("backgroundravenclaw.jpg");	
+	position:relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: 135%;
+	font-family: Papyrus;
+	text-align:justify;
+}
+
+.cinco{	
+	background-image:url("backgroundhufflepuff.jpg");	
+	position:relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: 135%;
+	font-family: Papyrus;
+	text-align:justify;	
+}		
+	
+
+#foot{
+	color:white; margin-top:40%; text-align:center; background-color:#555; padding:0; 
+}	
+	
+	
+	/* max-width:1900px; margin:200px;
+    .conteudo{
+	background-color:; text-align:justify; display:block; height:400px;float:left;
+    max-width:1900px; margin:0px;position:center;
+	}*/
+
