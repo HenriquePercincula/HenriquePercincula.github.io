@@ -1,0 +1,53 @@
+﻿
+body {
+	font-family:Arial ;  
+	text-align:justify;
+	background-color:#EfEfEe;
+	color:#444;
+	margin:0% 20% 0 20%;
+	font-size:18px;
+}
+
+h2{
+	font-family:;  
+	font-weight: bold;
+	color:#07f;
+}
+
+mark{
+  	font-family:Courier New;
+	color:#0000CC;	
+	background-color:#DDD;
+}
+
+#cssyntax{
+	color:#000;
+	font-weight: bold;
+}
+.musica{
+	bottom:0 auto;
+	left: 0; 
+	right: 0;
+	width:100%;
+	height:150px;
+}
+
+.texto{
+	background-color:#FFF;
+	padding:2%;
+}
+
+/*---------------------------------------Área referente à animação----------------------------------------*/
+.mario {
+  width: 312.875px;								   	/*para que apenas um oitavo da imagem apareça por vez.*/	
+  height: 410px;
+  margin: 0 auto;
+  background: url('smb-sprite-transparente.png') left center;
+  animation: play .8s steps(8) infinite;		  /*quantidade de steps equivalente aos quadros do sprite.*/
+  //bottom:0 ;
+}
+
+@keyframes play {
+    100% { background-position: -2503px; }/*2503px é a largura total da imagem, então, até o final da animação, será arrastada completamente para a esquerda, daí que vem a necessidade do valor negativo.*/
+}
+/*--------------------------------------------------------------------------------------------------------*/
