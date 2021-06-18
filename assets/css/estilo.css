@@ -34,26 +34,34 @@ h1,#logo{
 }
 
 header {
-    background: #37d;
+    background: #3377dd;
     margin: 0;
     width:inherit;
     min-height: 3em;
 }
     #logo{
-        float: right;
+        width: 48pt;
+        height: 34pt;
         font-weight: bold;
         line-height:15pt;
         font-size:1.2em;
-        color:#efefef;
-        margin:0.2em;
+        margin:0;
+        border-radius: 100%;
+        transition: 0.5s;
+        //padding-bottom: 14px;
     }
     #logo:hover{
-        color:#fff;
-        transition: 0.5s;
+        background-color:#333;
         cursor: pointer;
+        
     }
+    #logo svg:hover{      
+        filter:brightness(215%);
+    }
+
     #menu{
-        font-size:2em;
+        float: right;
+        font-size:1.5em;
         margin:0;
         padding:10px;
         width: 50px;
@@ -64,24 +72,52 @@ header {
         transition: 0.5s;
         color:#fff;
     }
-    
-    #nav{
-        display: none;
-        list-style-type: none;
+    #nav-shadow,#nav{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+    #nav-shadow{      
+        background-color: rgba(0, 0, 0, 0.699);
+    }
+    #nav {
+        background-color: #37d;       
+        padding-top: 60px;
         font-size: 14pt;
-        line-height: 50px;
-        text-align: center;
-    }
-    #nav>li>a{
+      }
+      
+      #nav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
         color:#eee;
+        display: block;
         transition: 0.5s;
-        width: 100%;
-    }
-    #nav>li>a:hover{
-        color:#fff;
-        transition: 0.5s;
-        width: 100%;
-    }
+      }
+      
+      #nav a:hover {
+        color: #f1f1f1;
+      }
+      
+      #nav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        cursor: pointer;
+      }
+      
+      
+      @media screen and (max-height: 450px) {
+        #nav {padding-top: 15px;}
+        #nav a {font-size: 18px;}
+      }
     
 a,a:visited{
     text-decoration: none;

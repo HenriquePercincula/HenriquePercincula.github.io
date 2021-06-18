@@ -1,13 +1,9 @@
-function esconder(){
-  var nav = document.getElementById('nav')
-  nav.style.display = "none";
+function mostrar() {
+  document.getElementById("nav").style.width = "250px";
+  document.getElementById("nav-shadow").style.width = "100vw";
 }
 
-function mostrar() {
-  var nav = document.getElementById('nav')
-  if (nav.style.display == "none") {
-    nav.style.display = "block";
-  } else {
-    nav.style.display = "none";
-  }
+function esconder() {
+  document.getElementById("nav").style.width = "0";
+  document.getElementById("nav-shadow").style.width = "0";
 }
