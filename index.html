@@ -20,24 +20,35 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 </head>
 
-<body onload="esconder()">
+<body >
     <header>
         <div id="menu" onclick="mostrar()" class="fa fa-bars"></div>
-        <a href="index.html" id="logo">Henrique<br>Percincula </a>
-        <div id="nav">
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="#contato">Contato</a></li>
+        <div id="logo">
+            <a href="index.html" >
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="0 0 2476 1747" width="48pt" height="34pt">
+                    <defs><clipPath id="_clipPath_cwi6ldRdYPnNvD9cmIctgSLngqvLPCbP"><rect width="2476" height="1747"/></clipPath></defs><g clip-path="url(#_clipPath_cwi6ldRdYPnNvD9cmIctgSLngqvLPCbP)"><line x1="1628" y1="876" x2="1270.061" y2="875.636" vector-effect="non-scaling-stroke" stroke-width="2" stroke="#163867" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/><line x1="979.688" y1="1649.5" x2="979.875" y2="69.813" vector-effect="non-scaling-stroke" stroke-width="2" stroke="#163867" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/><line x1="92.437" y1="834.165" x2="738.726" y2="570.862" vector-effect="non-scaling-stroke" stroke-width="2" stroke="#efefef" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/><line x1="68.5" y1="850.123" x2="722.768" y2="1161.299" vector-effect="non-scaling-stroke" stroke-width="2" stroke="#efefef" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/><line x1="1528.634" y1="108.085" x2="978.091" y2="1655.99" vector-effect="non-scaling-stroke" stroke-width="2" stroke="#efefef" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/><line x1="2374.397" y1="858.102" x2="1728.107" y2="594.799" vector-effect="non-scaling-stroke" stroke-width="2" stroke="#efefef" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/><line x1="2398.333" y1="874.059" x2="1744.064" y2="1185.236" vector-effect="non-scaling-stroke" stroke-width="2" stroke="#efefef" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/><line x1="1352" y1="1657" x2="1631" y2="871" vector-effect="non-scaling-stroke" stroke-width="2" stroke="#163867" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/></g>
+                </svg>
+            </a>
+        </div>
+        <div id="nav-shadow" onclick="esconder()">
+            <div id="nav" >
+            <a class="closebtn" onclick="esconder()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="#portifolio">Portifólio</a>
+            <a href="#contato">Contato</a>
+            </div>
         </div>
     </header>
+          
     <div class="container">
-
         <img src="assets/img/morro.jpg" alt="Morro do Voturuá">
         <a href="sobre.html"><button class="call"> Saiba Mais &RightArrowBar; </button></a>
         <div class="caption">
             Olá, me chamo Henrique, desenvolvedor Front-end.
         </div>
     </div>
-    <h1>Portifólio</h1>
+    <h1 id="portifolio">Portifólio</h1>
     <section class="cards">
         <div class="card">
             <a href="https://mydailystatus.henriquepercincula.now.sh/" target="_blank">
@@ -51,7 +62,7 @@
             </a>
         </div>
         <div class="card">
-            <a href="assets/Web/Mario animation/mario-animation.html" target="_blank">
+            <a href="assets/portifolio/Mario animation/mario-animation.html" target="_blank">
                 <div class="thumb">
                     <img src="assets/img/thumb-mario.png" alt="mario correndo">
                 </div>
@@ -62,7 +73,7 @@
             </a>
         </div>
         <div class="card">
-            <a href="assets/Web/Slider Javascript DOM/SliderJavascriptDOM.html" target="blank">
+            <a href="assets/portifolio/Slider Javascript DOM/SliderJavascriptDOM.html" target="blank">
                 <div class="thumb">
                     <img src="assets/img/thumb-slider.png" alt="paisagem da tarde">
                 </div>
@@ -73,9 +84,9 @@
             </a>
         </div>
         <div class="card">
-            <a href="assets/Web/Instagram homepage/index.html" target="_blank">
+            <a href="assets/portifolio/Instagram homepage/index.html" target="_blank">
                 <div class="thumb">
-                    <img src="assets/img/insta-thumb.png" alt="print do site">
+                    <img src="assets/img/insta-thumb.png" alt="tela de login do Instagram">
                 </div>
                 <div class="info">
                     <h3>Instagram Homepage</h3>
@@ -84,7 +95,7 @@
             </a>
         </div>
         <div class="card">
-            <a href="assets/Web/Casas de Hogwarts/home.html" target="_blank">
+            <a href="assets/portifolio/Casas de Hogwarts/home.html" target="_blank">
                 <div class="thumb">
                     <img src="assets/img/thumb-hogwarts.png" alt="texto sobre Grifinória ">
                 </div>
@@ -95,9 +106,9 @@
             </a>
         </div>
         <div class="card">
-            <a href="assets/Web/Interface Netflix/index.html" target="_blank">
+            <a href="assets/portifolio/Interface Netflix/index.html" target="_blank">
                 <div class="thumb">
-                    <img src="assets/img/thumb-netflix.png" alt="números">
+                    <img src="assets/img/thumb-netflix.png" alt="Breaking Bad na Netflix">
                 </div>
                 <div class="info">
                     <h3>Netflix Clone</h3>
@@ -106,7 +117,7 @@
             </a>
         </div>
         <div class="card">
-            <a href="assets/Web/Site 2 de Pokémon/Home.html" target="_blank">
+            <a href="assets/portifolio/Site 2 de Pokémon/Home.html" target="_blank">
                 <div class="thumb">
                     <img src="assets/img/thumb-pkmn2.png" alt="">
                 </div>
@@ -117,7 +128,7 @@
             </a>
         </div>
         <div class="card">
-            <a href="assets/Web/Hora do dia/ex014.html" target="_blank">
+            <a href="assets/portifolio/Hora do dia/ex014.html" target="_blank">
                 <div class="thumb">
                     <img src="assets/img/thumb-horas.png" alt="paisagem noturna">
                 </div>
