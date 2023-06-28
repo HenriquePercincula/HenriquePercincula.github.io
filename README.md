@@ -1,2 +1,2 @@
 # HenriquePercincula.github.io
-This is my portfolio
+This repository is my portfolio website.
